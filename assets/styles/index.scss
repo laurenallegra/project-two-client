@@ -2,11 +2,14 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
 // @import './font-awesome/scss/font-awesome';
-@import url(https://use.fontawesome.com/82de4032b3.css);
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Subrayada|Open+Sans);
+@import url(https://use.fontawesome.com/502f83b2ef.css);
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One|Julius+Sans+One|sans-serif);
 
 // @import './mixins';
-@import './better-bootstrap';
+@import './bootstrap';
 
 @import './colors';
 @import './typography';

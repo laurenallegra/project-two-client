@@ -1,31 +1,30 @@
-$purewhite: #fff;
+// basic colors
+$white: #fff;
 $black: #000;
 
+// transparent colors
 $transparent-black: rgba($black, .5);
 
-$aqua: #aad4b5;
+// neutrals
 $darkgray: #222e25;
-$darkorange: #f27b47;
 $lightgray: #97948a;
-$lightorange: #eea948;
 $tan: #f7f7be;
-$teal: #197a81;
 $white: #fafafa;
 
-// new colors
-$linen: #EAE2D6;
-$oyster: #D5C3AA;
+// main color palette
+$linen: #eae2d6;
+$oyster: #d5c3aa;
 $pewter: #867666;
-$lemon-tea: #E1B80D;
+$lemon-tea: #e1b80d;
 
 @function shade($color, $percentage) {
   @return mix($black, $color, $percentage);
 }
 
 @function tint($color, $percentage) {
-  @return mix($purewhite, $color, $percentage);
+  @return mix($white, $color, $percentage);
 }
 
 
-$lighttan: tint($tan, 50%);
-$teal-shade: shade($teal, 20%);
+$light-pewter: tint($pewter, 50%);
+$lemon-tea-shade: shade($lemon-tea, 20%);

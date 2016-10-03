@@ -23,7 +23,7 @@ body {
 }
 
 .wrapper {
-  min-height: 100%;
+  min-height: 30%;
   padding: $bar-height 0;
   position: relative;
 }
@@ -36,11 +36,11 @@ footer {
 }
 
 footer {
-  height: $bar-height;
-  background: $aqua;
-  @extend .text-center;
-  bottom: 0;
-  left: 0;
+height: $bar-height;
+background: $lemon-tea;
+@extend .text-center;
+bottom: 0;
+left: 0;
 }
 
 nav a,
@@ -60,7 +60,7 @@ nav {
     text-decoration: none;
 
     &:hover {
-      background-color: $teal-shade;
+      background-color: $lemon-tea;
       color: $white;
       text-decoration: none;
     }
@@ -76,7 +76,7 @@ nav {
       background-color: $linen;
 
       &:hover {
-        background-color: $darkorange;
+        background-color: $lemon-tea;
       }
     }
   }
@@ -102,11 +102,11 @@ footer {
 }
 
 .success {
-  background: $aqua;
+  background: $lemon-tea;
 }
 
 .title-o {
-  color: $darkorange;
+  color: $lemon-tea;
 }
 
 form {
@@ -145,15 +145,15 @@ button {
 #sign-up button,
 #change-password button,
 .new-game, {
-  background: $teal;
+  background: $lemon-tea;
 
   &:hover {
-    background: $teal-shade;
+    background: $lemon-tea-shade;
   }
 }
 
 .pwd-form {
-  background: $lighttan;
+  background: $light-pewter;
   padding: 15px;
 
   > div {
