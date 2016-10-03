@@ -1,6 +1,6 @@
 'use strict';
 
-const app = require('./app');
+const app = require('../app');
 
 const clearForm = (formId) => {
   document.getElementById(formId).reset();
@@ -13,12 +13,12 @@ const toggleAuth = () => {
   $('.game-play').toggle();
 };
 
-// const toggleAuthOptions = () => {
-//   $('.sign-up-link').toggleClass('hidden');
-//   $('.log-in-link').toggleClass('block');
-//   $('#log-in').toggle('fast');
-//   $('#sign-up').toggle('fast');
-// };
+const toggleAuthOptions = () => {
+  $('.sign-up-link').toggleClass('hidden');
+  $('.log-in-link').toggleClass('block');
+  $('#log-in').toggle('fast');
+  $('#sign-up').toggle('fast');
+};
 
 
 const toggleChangePassword = () => {
@@ -63,6 +63,7 @@ const logOutSuccess = () => {
 module.exports = {
   clearForm,
   toggleAuth,
+  toggleAuthOptions,
   toggleChangePassword,
   // logInFailure,
   // logOutFailure,
