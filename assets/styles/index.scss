@@ -1,2 +1,22 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+// @import './font-awesome/scss/font-awesome';
+@import url(https://use.fontawesome.com/82de4032b3.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Subrayada|Open+Sans);
+
+// @import './mixins';
+@import './better-bootstrap';
+
+@import './colors';
+@import './typography';
+
+
+@import './template';
+// @import './stats';
+
+
+@import './views';
+// @import './game-board';
+
+// @import './breakpoints';

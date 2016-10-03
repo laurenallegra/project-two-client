@@ -1,0 +1,44 @@
+$body-font: 'Open Sans', sans-serif;
+$header-font: 'Montserrat', sans-serif;
+$title-font: 'Montserrat Subrayada', sans-serif;
+$font-size: 14px;
+$line-height: 1;
+$input-font-size: 16px;
+
+.larger {
+  font-size: 1.2em;
+}
+
+body {
+  font-family: $body-font;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+h1 {
+  font-family: $title-font;
+  font-size: 35px;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+nav a,
+.stats {
+  font-family: $header-font;
+  text-transform: uppercase;
+}

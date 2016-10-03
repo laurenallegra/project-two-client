@@ -1,0 +1,163 @@
+$unit: 75px;
+$min-width: 300px;
+$bar-height: 30px;
+$link-padding: ($bar-height - $font-size) / 2;
+$form-element-height: 40px;
+
+// TEMPLATE
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $linen;
+  color: $darkgray;
+  height: 100%;
+  margin: 0;
+  min-width: $min-width;
+  padding: 0;
+  position: relative;
+}
+
+.wrapper {
+  min-height: 100%;
+  padding: $bar-height 0;
+  position: relative;
+}
+
+nav,
+footer {
+  min-width: $min-width;
+  position: absolute;
+  width: 100%;
+}
+
+footer {
+  height: $bar-height;
+  background: $aqua;
+  @extend .text-center;
+  bottom: 0;
+  left: 0;
+}
+
+nav a,
+button {
+  color: $white;
+  padding: $link-padding;
+}
+
+nav {
+  background: $oyster;
+  top: 0;
+
+  a {
+    background: $pewter;
+    display: block;
+    float: right;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $teal-shade;
+      color: $white;
+      text-decoration: none;
+    }
+
+    &:focus,
+    &:active {
+      color: $white;
+      text-decoration: none;
+    }
+
+    &.log-out,
+    &.log-in-link {
+      background-color: $linen;
+
+      &:hover {
+        background-color: $darkorange;
+      }
+    }
+  }
+}
+
+footer {
+
+}
+
+.messages {
+  @extend .text-center;
+  height: 30px;
+
+  div {
+    height: 30px;
+    padding: 8px 15px;
+  }
+}
+
+.warning {
+  background: $linen;
+  color: $white;
+}
+
+.success {
+  background: $aqua;
+}
+
+.title-o {
+  color: $darkorange;
+}
+
+form {
+  margin: 0 auto;
+  width: 225px;
+}
+
+input {
+  // @include border-radius(0);
+  background-color: $white;
+  border: 1px solid $white;
+  box-shadow: none;
+  font-size: $input-font-size;
+  height: $form-element-height;
+}
+
+label {
+  display: none;
+}
+
+button {
+  border: 0;
+  box-shadow: none;
+  height: $form-element-height;
+  width: 100%;
+}
+
+#log-in button {
+  background: $pewter;
+
+  &:hover {
+    background: $lemon-tea;
+  }
+}
+
+#sign-up button,
+#change-password button,
+.new-game, {
+  background: $teal;
+
+  &:hover {
+    background: $teal-shade;
+  }
+}
+
+.pwd-form {
+  background: $lighttan;
+  padding: 15px;
+
+  > div {
+    margin: 0 auto 10px;
+    max-width: 300px;
+  }
+}

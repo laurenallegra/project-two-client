@@ -1,0 +1,25 @@
+// INITIAL VIEW STATE
+.user-nav,
+.sign-up,
+.log-in-link,
+.pwd-form,
+.game-play,
+.hidden,
+.stats,
+.turn-marker {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+button:disabled,
+button:disabled:hover {
+  background-color: $lightgray;
+  pointer-events: none;
+};
