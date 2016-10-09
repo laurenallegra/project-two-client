@@ -10,7 +10,7 @@ const toggleAuth = () => {
   $('.auth-nav').toggle();
   $('.auth-forms').toggle();
   $('.user-nav').toggle();
-  $('.game-play').toggle();
+  // $('.game-play').toggle();
 };
 
 const toggleAuthOptions = () => {
