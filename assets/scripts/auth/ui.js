@@ -2,6 +2,18 @@
 
 const app = require('../app');
 
+const hidePoseForms = () => {
+  $('.pose-forms').hide();
+};
+
+const showPoseForms = () => {
+  $('.pose-forms').show();
+};
+
+$(window).load(function(){
+  hidePoseForms();
+});
+
 const clearForm = (formId) => {
   document.getElementById(formId).reset();
 };
@@ -51,6 +63,7 @@ const failure = (error) => {
 const logInSuccess = (data) => {
   app.user = data.user;
   toggleAuth();
+  showPoseForms();
   clearForm('sign-up');
   clearForm('log-in');
 };

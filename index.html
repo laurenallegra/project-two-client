@@ -11,7 +11,7 @@
       <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <div class="wrapper">
+      <div class="nav-wrapper">
         <nav>
           <div class="auth-nav">
             <a class="log-in-link" role="button" href="#">Log In</a>
@@ -39,46 +39,63 @@
         </div>
       </div>
 
-        <div class="messages">
-          <div></div>
+      <div class="messages">
+        <div></div>
+      </div>
+
+      <main>
+
+        <h1>Go Yoga</h1>
+        <!-- <h2>Welcome! This is a test!</h2> -->
+
+        <div class="auth-forms">
+          <form id="sign-up" class="sign-up">
+            <div>
+              <label for="credentials[email]">Email</label>
+              <input name="credentials[email]" id="credentials[email]" type="email" placeholder="Email" required>
+            </div>
+
+            <div>
+              <label for="credentials[password]">Password</label>
+              <input name="credentials[password]" id="credentials[password]" type="password" placeholder="Password" required>
+            </div>
+
+            <div>
+              <label for="credentials[password_confirmation]">Confirm password</label>
+              <input name="credentials[password_confirmation]" id="credentials[password_confirmation]" type="password" placeholder="Confirm password" required>
+            </div>
+
+            <button type="submit">Sign Up</button>
+          </form>
+
+          <form id="log-in">
+            <div>
+              <label for="credentials[email]">Email</label>
+              <input name="credentials[email]" id="credentials[email]" type="email" placeholder="Email" required>
+            </div>
+            <div>
+              <label for="credentials[password]">Password</label>
+              <input name="credentials[password]" id="credentials[password]" type="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Log In</button>
+          </form>
         </div>
 
-        <main>
-
-          <h1>Go Yoga</h1>
-          <!-- <h2>Welcome! This is a test!</h2> -->
-
-          <div class="auth-forms">
-            <form id="sign-up" class="sign-up">
-              <div>
-                <label for="credentials[email]">Email</label>
-                <input name="credentials[email]" id="credentials[email]" type="email" placeholder="Email" required>
-              </div>
-
-              <div>
-                <label for="credentials[password]">Password</label>
-                <input name="credentials[password]" id="credentials[password]" type="password" placeholder="Password" required>
-              </div>
-
-              <div>
-                <label for="credentials[password_confirmation]">Confirm password</label>
-                <input name="credentials[password_confirmation]" id="credentials[password_confirmation]" type="password" placeholder="Confirm password" required>
-              </div>
-
-              <button type="submit">Sign Up</button>
-            </form>
-
-            <form id="log-in">
-              <div>
-                <label for="credentials[email]">Email</label>
-                <input name="credentials[email]" id="credentials[email]" type="email" placeholder="Email" required>
-              </div>
-              <div>
-                <label for="credentials[password]">Password</label>
-                <input name="credentials[password]" id="credentials[password]" type="password" placeholder="Password" required>
-              </div>
-              <button type="submit">Log In</button>
+        <div class="pose-forms">
+          <!-- create user_pose -->
+          <div class="create-user-pose-form">
+            <form id="create-user-pose">
+              <fieldset>
+                <div class="form-group">
+                  <input type="text" class="form-control input" name="user_pose[content]" placeholder="Enter the ID of your favorite pose add it to your 'Favorites' list...">
+                </div>
+                <button type="submit" class="btn btn-primary pull-right" name="submit">Post</button>
+              </fieldset>
             </form>
           </div>
-        </main>
+
+        </div>
+
+
+      </main>
     </body>

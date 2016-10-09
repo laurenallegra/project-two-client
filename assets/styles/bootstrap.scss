@@ -1,3 +1,4 @@
+// use main tag to apply styles to .container-fluid a
 main {
   @extend .container-fluid;
   @extend .text-center;

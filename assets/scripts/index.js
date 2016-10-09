@@ -7,7 +7,9 @@
 // require('./example');
 
 const authEvents = require('./auth/events.js');
+const userPosesEvents = require('./user-poses/events.js');
 
-$(() => {
+$(window).load(function(){
   authEvents.addHandlers();
+  userPosesEvents.addHandlers();
 });
