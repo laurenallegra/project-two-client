@@ -40,6 +40,13 @@ const toggleChangePassword = () => {
 // const signUpFailure = () => {
 //   messageFade('.messages div', 'signUpFail');
 // };
+const success = (data) => {
+  console.log(data);
+};
+
+const failure = (error) => {
+  console.error(error);
+};
 
 const logInSuccess = (data) => {
   app.user = data.user;
@@ -71,4 +78,6 @@ module.exports = {
   // signUpFailure,
   logInSuccess,
   logOutSuccess,
+  failure,
+  success,
 };

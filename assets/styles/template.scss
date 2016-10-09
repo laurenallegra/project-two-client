@@ -4,7 +4,6 @@ $bar-height: 30px;
 $link-padding: ($bar-height - $font-size) / 2;
 $form-element-height: 40px;
 
-// TEMPLATE
 
 html {
   height: 100%;
@@ -36,11 +35,11 @@ footer {
 }
 
 footer {
-height: $bar-height;
-background: $lemon-tea;
-@extend .text-center;
-bottom: 0;
-left: 0;
+  @extend .text-center;
+  background: $lemon-tea;
+  bottom: 0;
+  left: 0;
+  height: $bar-height;
 }
 
 nav a,
@@ -73,17 +72,13 @@ nav {
 
     &.log-out,
     &.log-in-link {
-      background-color: $linen;
+      background-color: $pewter;
 
       &:hover {
         background-color: $lemon-tea;
       }
     }
   }
-}
-
-footer {
-
 }
 
 .messages {
@@ -105,9 +100,9 @@ footer {
   background: $lemon-tea;
 }
 
-.title-o {
-  color: $lemon-tea;
-}
+// .title-o {
+//   color: $lemon-tea;
+// }
 
 form {
   margin: 0 auto;
@@ -135,10 +130,10 @@ button {
 }
 
 #log-in button {
-  background: $pewter;
+  background: $lemon-tea;
 
   &:hover {
-    background: $lemon-tea;
+    background: $lemon-tea-shade;
   }
 }
 

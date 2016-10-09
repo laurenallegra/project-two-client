@@ -16,20 +16,24 @@ body {
 }
 
 h1 {
-  font-family: $title-font;
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 35px;
-  margin: 0 0 20px;
-  text-transform: uppercase;
 }
+// h1 {
+//   font-family: $title-font;
+//   font-size: 35px;
+//   margin: 0 0 20px;
+//   // text-transform: uppercase;
+// }
 
 h2 {
   font-size: 30px;
   margin: 0;
 }
 
-.title {
-  text-transform: uppercase;
-}
+// .title {
+//   // text-transform: uppercase;
+// }
 
 h2,
 h3,
@@ -40,5 +44,5 @@ button,
 nav a,
 .stats {
   font-family: $header-font;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
