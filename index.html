@@ -5,7 +5,7 @@
 
       <!-- <script src="https://use.fontawesome.com/502f83b2ef.js"></script> -->
       <!-- <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet"> -->
-      <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <script src="vendor.bundle.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
@@ -87,15 +87,39 @@
             <form id="create-user-pose">
               <fieldset>
                 <div class="form-group">
-                  <input type="text" class="form-control input" name="user_pose[content]" placeholder="Enter the ID of your favorite pose add it to your 'Favorites' list...">
+                  <input type="text" class="form-control input" name="user_pose[pose_id]" placeholder="Enter the ID of your favorite pose add it to your 'Favorites' list...">
                 </div>
                 <button type="submit" class="btn btn-primary pull-right" name="submit">Post</button>
               </fieldset>
             </form>
           </div>
 
-        </div>
+           <form id="index-user-poses">
+             <button type="submit" name="submit" class="btn btn-default">All My Poses</button>
+           </form>
 
+           <!-- Update UserPose -->
+          <form id="update-user-pose">
+            <fieldset>
+              <input type="text" name="user_pose[id]" placeholder="User Pose ID">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="user_pose[pose_id]" placeholder="New Pose ID">
+                </div>
+              <button type="submit" class="btn btn-primary pull-right" name="submit">Update My Favorite Poses</button>
+            </fieldset>
+          </form>
+
+          <!-- Delete UserPose -->
+          <form id="delete-user-pose">
+            <input type="text" name="user_pose[id]" placeholder="User Pose ID">
+            <button type="submit" name="submit" class="btn btn-default">Delete This Pose From My Favorites</button>
+          </form>
+
+
+          </div>
+
+          <!-- Message to Display Content -->
+          <div class="display-content"></div>
 
         <table class="table table-bordered">
           <thead>
@@ -158,6 +182,7 @@
             </tr>
           </tbody>
         </table>
+
 
       </main>
     </body>

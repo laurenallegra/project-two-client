@@ -11,14 +11,40 @@ const onCreateUserPose = function (event) {
   api.createUserPose(data)
     .done( function(){
       ui.createUserPoseSuccess();
-      // onIndexThoughts(event); // TODO
+      // onIndexuserPose(event); // TODO
     })
     .fail(ui.createUserPoseFail);
 };
 
+const onIndexUserPoses = function (event) {
+  event.preventDefault();
+  api.indexUserPoses()
+  .done(ui.indexUserPoseSuccess)
+  .fail(ui.failure);
+};
+
+const onUpdateUserPose = function (event) {
+   event.preventDefault();
+   let data = getFormFields(event.target);
+   api.updateUserPose(data)
+     .done(ui.success)
+     .fail(ui.failure);
+ };
+
+const onDeleteUserPose = function (event) {
+   event.preventDefault();
+   let data = getFormFields(event.target);
+   api.deleteUserPose(data)
+     .done(ui.success)
+     .fail(ui.failure);
+ };
+
 const addHandlers = () => {
   console.log('addHandlers Ran!!!');
   $('#create-user-pose').on('submit', onCreateUserPose);
+  $('#index-user-poses').on('submit', onIndexUserPoses);
+  $('#update-user-pose').on('submit', onUpdateUserPose);
+  $('#delete-user-pose').on('submit', onDeleteUserPose);
 };
 
 
