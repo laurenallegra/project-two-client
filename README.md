@@ -1,8 +1,8 @@
 # Project 2: Full-Stack Application
 
-Live application: https://chrxtina.github.io/paisel-client/
+Live application: 
 
-Back-end repository: https://github.com/chrxtina/paisel-api
+Back-end repository: https://github.com/laurenallegra/project-two-rails-api
 
 ## About
 
