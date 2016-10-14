@@ -91,18 +91,9 @@ nav {
   }
 }
 
-.warning {
-  background: $linen;
-  color: $white;
-}
-
 .success {
   background: $lemon-tea;
 }
-
-// .title-o {
-//   color: $lemon-tea;
-// }
 
 form {
   margin: 0 auto;
@@ -139,7 +130,7 @@ button {
 
 #sign-up button,
 #change-password button,
-.new-game, {
+.yoga-pose-messages, {
   background: $lemon-tea;
 
   &:hover {

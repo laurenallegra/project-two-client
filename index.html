@@ -39,14 +39,16 @@
         </div>
       </div>
 
+      <!-- general messages div -->
       <div class="messages">
-        <div></div>
       </div>
 
+      <!-- yoga pose messages div -->
+      <div class="yoga-pose-messages">
+      </div>
       <main>
 
         <h1>Go Yoga</h1>
-        <!-- <h2>Welcome! This is a test!</h2> -->
 
         <div class="auth-forms">
           <form id="sign-up" class="sign-up">
@@ -82,26 +84,28 @@
         </div>
 
         <div class="pose-forms">
+
           <!-- create user_pose -->
           <div class="create-user-pose-form">
             <form id="create-user-pose">
               <fieldset>
                 <div class="form-group">
-                  <input type="text" class="form-control input" name="user_pose[pose_id]" placeholder="Enter the ID of your favorite pose add it to your 'Favorites' list...">
+                  <input type="text" class="form-control input" name="user_pose[pose_id]" placeholder="Enter the ID of your favorite pose to add it to your 'Favorites' list...">
                 </div>
                 <button type="submit" class="btn btn-primary pull-right" name="submit">Post</button>
               </fieldset>
             </form>
           </div>
 
+          <!-- Index UserPose -->
            <form id="index-user-poses">
-             <button type="submit" name="submit" class="btn btn-default">All My Poses</button>
+             <button type="submit" name="submit" class="btn btn-default">See All My Poses</button>
            </form>
 
            <!-- Update UserPose -->
           <form id="update-user-pose">
             <fieldset>
-              <input type="text" name="user_pose[id]" placeholder="User Pose ID">
+              <input type="text" name="user_pose[id]" placeholder="User Pose ID to Update">
                 <div class="form-group">
                   <input type="text" class="form-control" name="user_pose[pose_id]" placeholder="New Pose ID">
                 </div>
@@ -121,67 +125,70 @@
           <!-- Message to Display Content -->
           <div class="display-content"></div>
 
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>English Name</th>
-              <th>Sanskrit Name</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Big Toe Pose</td>
-              <td>Padangusthasana</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Chair Pose</td>
-              <td>Utkatasana</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Extended Triangle Pose</td>
-              <td>Utthita Trikonasana</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Half Moon Pose</td>
-              <td>Ardha Chandrasana</td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td>Lotus Pose</td>
-              <td>Padmasana</td>
-            </tr>
-            <tr>
-              <th scope="row">6</th>
-              <td>Crane Pose</td>
-              <td>Bakasana</td>
-            </tr>
-            <tr>
-              <th scope="row">7</th>
-              <td>Downward-Facing Dog</td>
-              <td>Adho Mukha Svanasana</td>
-            </tr>
-            <tr>
-              <th scope="row">8</th>
-              <td>Child's Posee</td>
-              <td>Balasana</td>
-            </tr>
-            <tr>
-              <th scope="row">9</th>
-              <td>Cobra Pose</td>
-              <td>Bhujangasana</td>
-            </tr>
-            <tr>
-              <th scope="row">10</th>
-              <td>Fish Pose</td>
-              <td>Matsyasana</td>
-            </tr>
-          </tbody>
-        </table>
+          <!-- pose table -->
+          <div class="pose-table">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>English Name</th>
+                  <th>Sanskrit Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Big Toe Pose</td>
+                  <td>Padangusthasana</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Chair Pose</td>
+                  <td>Utkatasana</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Extended Triangle Pose</td>
+                  <td>Utthita Trikonasana</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Half Moon Pose</td>
+                  <td>Ardha Chandrasana</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Lotus Pose</td>
+                  <td>Padmasana</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Crane Pose</td>
+                  <td>Bakasana</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Downward-Facing Dog</td>
+                  <td>Adho Mukha Svanasana</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Child's Pose</td>
+                  <td>Balasana</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Cobra Pose</td>
+                  <td>Bhujangasana</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Fish Pose</td>
+                  <td>Matsyasana</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
 
       </main>

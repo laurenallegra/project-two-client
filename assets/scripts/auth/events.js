@@ -4,47 +4,6 @@ const getFormFields = require('../../../lib/get-form-fields');
 const api = require('./api');
 const ui = require('./ui');
 
-
-// const onSignUp = (event) => {
-//   event.preventDefault();
-//   let signUpData = getFormFields(event.target);
-//   api.signUp(signUpData)
-//     .done(function (data, textStatus, jqXHR) {
-//       api.autoLogIn(data, textStatus, jqXHR, signUpData)
-//         .done(logIn)
-//         .fail(ui.logInFailure);
-//     })
-//     .fail(ui.signUpFailure);
-// };
-
-
-// const onLogIn = (event) => {
-//   event.preventDefault();
-//   let data = getFormFields(event.target);
-//   api.logIn(data)
-//     .done(logIn)
-//     .fail(ui.logInFailure);
-// };
-
-// const onLogOut = (event) => {
-//   event.preventDefault();
-//   api.logOut()
-//     .done(ui.logOutSuccess)
-//     .fail(ui.logOutFailure);
-// };
-//
-// const onChangePassword = (event) => {
-//   event.preventDefault();
-//   let data = getFormFields(event.target);
-//   api.changePassword(data)
-//     .done(ui.passwordChangeSuccess)
-//     .fail(ui.passwordChangeFailure);
-// };
-//
-// const logIn = (data) => {
-//   ui.logInSuccess(data);
-// };
-
 const onToggleAuthOptions = () => {
   ui.toggleAuthOptions();
 };

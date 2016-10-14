@@ -10,8 +10,17 @@ const showPoseForms = () => {
   $('.pose-forms').show();
 };
 
+const hidePoseTable = () => {
+  $('.pose-table').hide();
+};
+
+const showPoseTable = () => {
+  $('.pose-table').show();
+};
+
 $(window).load(function(){
   hidePoseForms();
+  hidePoseTable();
 });
 
 const clearForm = (formId) => {
@@ -65,6 +74,7 @@ const logInSuccess = (data) => {
   showPoseForms();
   clearForm('sign-up');
   clearForm('log-in');
+  showPoseTable();
 };
 
 const logOutSuccess = () => {
@@ -92,4 +102,6 @@ module.exports = {
   logOutSuccess,
   failure,
   success,
+  hidePoseTable,
+  showPoseTable
 };

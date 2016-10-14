@@ -11,7 +11,7 @@ const onCreateUserPose = function (event) {
   api.createUserPose(data)
     .done( function(){
       ui.createUserPoseSuccess();
-      // onIndexuserPose(event); // TODO
+      // onIndexUserPose(event); // TODO
     })
     .fail(ui.createUserPoseFail);
 };

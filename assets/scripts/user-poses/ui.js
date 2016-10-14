@@ -18,7 +18,7 @@ const createUserPoseFail = () => {
 const indexUserPoseSuccess = (user_poses) => {
 $('.display-content').html(indexUserPosesTemplate(user_poses));
   console.log(user_poses);
-  // clearInputField();
+  clearInputField();
 };
 
 const success = (data) => {
