@@ -1,7 +1,8 @@
 'use strict';
 
 const app = {
-  host: 'https://lit-sands-47275.herokuapp.com',
+  // host: 'https://lit-sands-47275.herokuapp.com',
+  host: 'http://localhost:3000'
 };
 
   module.exports = app;
