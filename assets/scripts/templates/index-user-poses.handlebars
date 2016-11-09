@@ -1,6 +1,19 @@
 <h2>My Favorite Poses</h2>
-{{#user_poses}}
-<p class = "my-poses">
-  User Pose Id: {{id}} | {{pose.english_name}} | {{pose.sanskrit_name}}
-</p>
-{{/user_poses}}
+<table>
+  <thead>
+    <tr>
+      <th>User Pose Id</th>
+      <th>English Name</th>
+      <th>Sanskrit Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#user_poses}}
+      <tr>
+        <td>{{id}}</td>
+        <td>{{pose.english_name}}</td>
+        <td>{{pose.sanskrit_name}}</td>
+      </tr>
+    {{/user_poses}}
+  </tbody>
+</table>
