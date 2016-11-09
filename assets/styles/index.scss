@@ -8,18 +8,14 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 @import url(https://fonts.googleapis.com/css?family=Julius+Sans+One|Julius+Sans+One|sans-serif);
 
-// @import './mixins';
+
 @import './bootstrap';
 
 @import './colors';
 @import './typography';
 
-
 @import './template';
-// @import './stats';
-
+@import './pose-table';
 
 @import './views';
-// @import './game-board';
-
-// @import './breakpoints';
+@import './patch';
