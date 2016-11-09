@@ -96,3 +96,19 @@ table th {
 table tbody > tr:nth-child(odd) > td {
   background-color: rgba(0, 0, 0, .04);
 }
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.pose-table {
+  float: left;
+  width: 45%;
+}
+
+.display-content {
+  float: right;
+  width: 45%;
+}
