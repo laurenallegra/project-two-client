@@ -1,0 +1,98 @@
+.pose-forms {
+  background: #D5C3AA;
+  overflow: hidden;
+  padding: 15px;
+  margin-bottom: 30px
+}
+
+.pose-forms > div {
+  float: left;
+  width: 25%;
+  padding: 15px;
+}
+
+.pose-forms > div > form {
+  width: 100%;
+}
+
+@media (max-width: 900px){
+  .pose-forms > div {
+    float: none;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+.pose-forms input.input {
+  background: rgba(255, 255, 255, .5);
+  border: 0px;
+  padding: 20px;
+}
+
+#update-user-pose fieldset > input:first-child {
+  margin-bottom: 5px;
+}
+
+input.standard-input, input.standard-input:focus {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.display-content {
+  margin-bottom: 30px;
+}
+
+#delete-user-pose input[name="user_pose[id]"] {
+  margin-bottom: 15px;
+}
+
+.pose-forms h4 {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.button {
+  background: #e1b80d;
+  color: #fff;
+  border: 0;
+}
+
+.button:active {
+  background: #b4930a;
+}
+
+table {
+  font-family: "Julius Sans One", sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th {
+  vertical-align: bottom;
+  font-weight: bold;
+}
+
+table th, table td {
+  text-align: left;
+  padding: .9em 1.5em .8em;
+}
+
+table {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+
+table thead th {
+  border-bottom: 0;
+}
+
+table th {
+  background: #d5c3aa;
+  border-bottom-color: rgba(0, 0, 0, .1);
+}
+
+table tbody > tr:nth-child(odd) > td {
+  background-color: rgba(0, 0, 0, .04);
+}
