@@ -70,7 +70,7 @@
             <button type="submit">Sign Up</button>
           </form>
 
-          <form id="log-in">
+          <form id="log-in" class="log-in">
             <div>
               <label for="credentials[email]">Email</label>
               <input name="credentials[email]" id="credentials[email]" type="email" placeholder="Email" required>
@@ -86,38 +86,48 @@
         <div class="pose-forms">
 
           <!-- create user_pose -->
-          <div class="create-user-pose-form">
+          <div>
+            <h4>Add a favorite pose!!!</h4>
             <form id="create-user-pose">
               <fieldset>
                 <div class="form-group">
-                  <input type="text" class="form-control input" name="user_pose[pose_id]" placeholder="Enter the ID of your favorite pose to add it to your 'Favorites' list...">
+                  <input type="text" class="standard-input" name="user_pose[pose_id]" placeholder="Enter the ID of your favorite pose to add it to your 'Favorites' list...">
                 </div>
-                <button type="submit" class="btn btn-primary pull-right" name="submit">Post</button>
+                <button type="submit" class="button" name="submit">Add</button>
               </fieldset>
             </form>
           </div>
 
           <!-- Index UserPose -->
+          <div>
+            <h4>Refresh my favorite poses!!!</h4>
            <form id="index-user-poses">
-             <button type="submit" name="submit" class="btn btn-default">See All My Poses</button>
+             <button type="submit" name="submit" class="button">Refresh</button>
            </form>
+         </div>
 
-           <!-- Update UserPose -->
-          <form id="update-user-pose">
-            <fieldset>
-              <input type="text" name="user_pose[id]" placeholder="User Pose ID to Update">
-                <div class="form-group">
-                  <input type="text" class="form-control" name="user_pose[pose_id]" placeholder="New Pose ID">
-                </div>
-              <button type="submit" class="btn btn-primary pull-right" name="submit">Update My Favorite Poses</button>
-            </fieldset>
-          </form>
+          <!-- Update UserPose -->
+          <div>
+           <h4>Update a favorite pose!!!</h4>
+            <form id="update-user-pose">
+              <fieldset>
+                <input type="text" class="standard-input" name="user_pose[id]" placeholder="User Pose ID to Update">
+                  <div class="form-group">
+                    <input type="text" class="standard-input" name="user_pose[pose_id]" placeholder="New Pose ID">
+                  </div>
+                <button type="submit" class="button" name="submit">Update</button>
+              </fieldset>
+            </form>
+          </div>
 
           <!-- Delete UserPose -->
-          <form id="delete-user-pose">
-            <input type="text" name="user_pose[id]" placeholder="User Pose ID">
-            <button type="submit" name="submit" class="btn btn-default">Delete This Pose From My Favorites</button>
-          </form>
+          <div>
+           <h4>Delete a favorite pose!!!</h4>
+            <form id="delete-user-pose">
+              <input type="text" class="standard-input" name="user_pose[id]" placeholder="User Pose ID">
+              <button type="submit" name="submit" class="button">Delete</button>
+            </form>
+          </div>
 
 
           </div>
@@ -127,7 +137,7 @@
 
           <!-- pose table -->
           <div class="pose-table">
-            <table class="table table-bordered">
+            <table>
               <thead>
                 <tr>
                   <th>ID</th>
@@ -137,52 +147,52 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">1</th>
+                  <td scope="row">1</td>
                   <td>Big Toe Pose</td>
                   <td>Padangusthasana</td>
                 </tr>
                 <tr>
-                  <th scope="row">2</th>
+                  <td scope="row">2</td>
                   <td>Chair Pose</td>
                   <td>Utkatasana</td>
                 </tr>
                 <tr>
-                  <th scope="row">3</th>
+                  <td scope="row">3</td>
                   <td>Extended Triangle Pose</td>
                   <td>Utthita Trikonasana</td>
                 </tr>
                 <tr>
-                  <th scope="row">4</th>
+                  <td scope="row">4</td>
                   <td>Half Moon Pose</td>
                   <td>Ardha Chandrasana</td>
                 </tr>
                 <tr>
-                  <th scope="row">5</th>
+                  <td scope="row">5</td>
                   <td>Lotus Pose</td>
                   <td>Padmasana</td>
                 </tr>
                 <tr>
-                  <th scope="row">6</th>
+                  <td scope="row">6</td>
                   <td>Crane Pose</td>
                   <td>Bakasana</td>
                 </tr>
                 <tr>
-                  <th scope="row">7</th>
+                  <td scope="row">7</td>
                   <td>Downward-Facing Dog</td>
                   <td>Adho Mukha Svanasana</td>
                 </tr>
                 <tr>
-                  <th scope="row">8</th>
+                  <td scope="row">8</td>
                   <td>Child's Pose</td>
                   <td>Balasana</td>
                 </tr>
                 <tr>
-                  <th scope="row">9</th>
+                  <td scope="row">9</td>
                   <td>Cobra Pose</td>
                   <td>Bhujangasana</td>
                 </tr>
                 <tr>
-                  <th scope="row">10</th>
+                  <td scope="row">10</td>
                   <td>Fish Pose</td>
                   <td>Matsyasana</td>
                 </tr>
