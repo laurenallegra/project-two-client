@@ -60,8 +60,7 @@ const toggleChangePassword = () => {
 // const signUpFailure = () => {
 //   messageFade('.messages div', 'signUpFail');
 // };
-const success = (data) => {
-  console.log(data);
+const success = () => {
 };
 
 const failure = (error) => {

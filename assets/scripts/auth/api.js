@@ -4,7 +4,6 @@ const app = require('../app');
 
 // ajax request to the api to let a new user sign up
 const signUp = (data) => {
-  // console.log(data);
   return $.ajax({
     url: app.host + '/sign-up',
     method: 'POST',
