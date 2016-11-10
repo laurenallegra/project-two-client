@@ -8,15 +8,21 @@ const ui = require('./ui');
 const onCreateUserPose = function (event) {
   event.preventDefault();
   let data = getFormFields(event.target);
-  api.createUserPose(data)
-    .done(function(){
-    ui.createUserPoseSuccess();
-      // onIndexUserPose(event); // TODO
-    })
-    .fail(ui.createUserPoseFail);
-  api.indexUserPoses()
-    .done(ui.indexUserPoseSuccess)
-    .fail(ui.failure);
+
+  if (data.user_pose.pose_id === "") {
+    alert("Please enter a valid pose number");
+  } else {
+    api.createUserPose(data)
+      .done(function(){
+      ui.createUserPoseSuccess();
+        // onIndexUserPose(event); // TODO
+      })
+      .fail(ui.createUserPoseFail);
+
+      api.indexUserPoses()
+        .done(ui.indexUserPoseSuccess)
+        .fail(ui.failure);
+  }
 };
 
 // const onIndexUserPoses = function (event) {
