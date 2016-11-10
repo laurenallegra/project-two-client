@@ -1,5 +1,5 @@
 .pose-forms {
-  background: #D5C3AA;
+  background: #d5c3aa;
   overflow: hidden;
   padding: 15px;
   margin-bottom: 30px;
@@ -26,7 +26,7 @@
 
 .pose-forms input.input {
   background: rgba(255, 255, 255, .5);
-  border: 0px;
+  border: 0;
   padding: 20px;
 }
 
@@ -34,13 +34,17 @@
   margin-bottom: 5px;
 }
 
-input.standard-input, input.standard-input:focus {
+input.standard-input,
+input.standard-input:focus {
   border: 0 !important;
   box-shadow: none !important;
 }
 
 .display-content {
   margin-bottom: 30px;
+  float: right;
+  margin-right: 5%;
+  width: 45%;
 }
 
 #delete-user-pose input[name="user_pose[id]"] {
@@ -73,9 +77,10 @@ table th {
   font-weight: bold;
 }
 
-table th, table td {
+table td,
+table th {
   text-align: left;
-  padding: .9em 1.5em .8em;
+  padding: 0.9em 1.5em 0.8em;
 }
 
 table {
@@ -106,12 +111,6 @@ table tbody > tr:nth-child(odd) > td {
 .pose-table {
   float: left;
   margin-left: 5%;
-  width: 45%;
-}
-
-.display-content {
-  float: right;
-  margin-right: 5%;
   width: 45%;
 }
 
