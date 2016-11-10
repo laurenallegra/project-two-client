@@ -85,6 +85,9 @@ const logOutSuccess = () => {
   $('.log-in-link').addClass('hidden');
   $('#log-in').show();
   $('#sign-up').hide();
+  $('.pose-tables-wrapper').hide();
+  $('.pose-forms').hide();
+  $('.nav-wrapper').show();
 };
 
 
