@@ -1,22 +1,21 @@
-# Project 2: Full-Stack Application
+# Capstone Project: Full-Stack Application
 
-Live application: 
+Live application:
 
 Back-end repository: https://github.com/laurenallegra/project-two-rails-api
 
 ## About
 
-GoYoga is a very simple app that allows users to view a simple table of yoga
-poses--with English and Sanskrit names--and create a list of favorite poses.
-After signing-up and logging-in, a user can add and delete poses to their list;
-change a pose in their list (by updating what is currently called a user-pose);
+GoYoga is a simple app that allows users to create a table of their favorite yoga poses, and  After signing up and loggging view a table of yoga poses--labeled with both their English and Sanskrit names--and create a table of their favorite poses.
+After signing up and logging in, a user can add and delete poses to their "Favorite Poses" table;
+change a pose in their list (by updating what is called a "user-pose");
 delete a pose from the list; and view the list of all their current favorite poses.
 
 ## Features
 
 - User Authentication: sign-up, sign-in, sign-out, and change password
-- Basic CRUD actions: create, edit, view, and delete poses on their "My Favorite
-Poses" list, aka "user-poses"
+- Basic CRUD actions: create, edit, view, and delete poses on their "My Favorite Poses" list, aka "user-poses"
+- Auto-generate random sequences of Favorite Poses by simply clicking a button
 
 ## Technologies Used
 
@@ -66,3 +65,5 @@ been added to your Favorites List!"
 ## Wireframes, User Stories, Entity Relationship Diagrams, and Add'l Prep/Research
 
 - https://www.evernote.com/l/AAR2K0qOdbxIXZuuDnj84TCutDV4ho84E98
+
+![Imgur](http://i.imgur.com/yLntAT4.png)

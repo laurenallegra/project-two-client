@@ -1,9 +1,11 @@
 'use strict';
 
+let _ = require('underscore');
+
 const indexUserPosesTemplate = require ('../templates/index-user-poses.handlebars');
 
 const clearInputField = () => {
-  $('.input').val('');
+  $('.standard-input').val('');
 };
 
 const createUserPoseSuccess = (data) => {
@@ -17,8 +19,12 @@ const createUserPoseFail = () => {
 
 const indexUserPoseSuccess = (user_poses) => {
 $('.display-content').html(indexUserPosesTemplate(user_poses));
-  console.log(user_poses);
   clearInputField();
+};
+
+const shuffleUserPoses = (posesArray) => {
+  let user_poses = _.shuffle(posesArray);
+  $('.display-content').html(indexUserPosesTemplate({ user_poses }));
 };
 
 const success = (data) => {
@@ -30,9 +36,11 @@ const failure = (data) => {
 };
 
 module.exports = {
+  clearInputField,
   createUserPoseSuccess,
   createUserPoseFail,
   indexUserPoseSuccess,
+  shuffleUserPoses,
   success,
   failure,
 };

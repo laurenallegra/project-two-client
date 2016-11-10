@@ -2,7 +2,7 @@
   background: #D5C3AA;
   overflow: hidden;
   padding: 15px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 .pose-forms > div {
@@ -15,7 +15,7 @@
   width: 100%;
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
   .pose-forms > div {
     float: none;
     width: 100%;
@@ -105,10 +105,25 @@ table tbody > tr:nth-child(odd) > td {
 
 .pose-table {
   float: left;
+  margin-left: 5%;
   width: 45%;
 }
 
 .display-content {
   float: right;
+  margin-right: 5%;
   width: 45%;
 }
+
+// TODO add this back in later
+// to get scrollable tables:
+// thead,
+// tbody {
+//   display: block;
+// }
+//
+// tbody {
+//   height: 100px;
+//   overflow-y: auto;    // Trigger vertical scroll    //
+//   overflow-x: hidden;  // Hide the horizontal scroll //
+// }
