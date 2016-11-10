@@ -87,9 +87,12 @@ been added to your Favorites List!"
 
 ## Wireframes, User Stories, Entity Relationship Diagrams, and Add'l Prep/Research
 
-- https://www.evernote.com/l/AAR2K0qOdbxIXZuuDnj84TCutDV4ho84E98
+- https://www.evernote.com/l/AAS03wzji-tPrrnqyy6_MzQ-2KOrXxULXOA
 
 ## Screenshots of App
 
+Landing page:
 ![Imgur](http://i.imgur.com/yLntAT4.png)
+
+Interactive user page:
 ![Imgur](http://i.imgur.com/Xznh61C.png)
