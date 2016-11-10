@@ -1,6 +1,6 @@
 tmp
 dist
-
+dependencies.js
 specs.js
 
 _SpecRunner.html

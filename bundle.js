@@ -176,7 +176,6 @@ webpackJsonp([0],[
 
 	// ajax request to the api to let a new user sign up
 	var signUp = function signUp(data) {
-	  // console.log(data);
 	  return $.ajax({
 	    url: app.host + '/sign-up',
 	    method: 'POST',
@@ -243,8 +242,7 @@ webpackJsonp([0],[
 	'use strict';
 
 	var app = {
-	  // host: 'https://lit-sands-47275.herokuapp.com',
-	  host: 'http://localhost:3000'
+	  host: 'https://lit-sands-47275.herokuapp.com'
 	};
 
 	module.exports = app;
@@ -342,9 +340,7 @@ webpackJsonp([0],[
 	// const signUpFailure = () => {
 	//   messageFade('.messages div', 'signUpFail');
 	// };
-	var success = function success(data) {
-	  console.log(data);
-	};
+	var success = function success() {};
 
 	var failure = function failure(error) {
 	  console.error(error);
